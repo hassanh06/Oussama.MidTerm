@@ -1,0 +1,30 @@
+We are learning file reader in java by input steam and buffer reader
+
+Escape sequence
+Nested class
+Object
+Scanner
+Static
+Variable
+Data Type
+Concatenation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
