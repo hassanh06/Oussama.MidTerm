@@ -21,7 +21,7 @@ public class ArithmeticOperator {
         System.out.println(ad);
         System.out.println(sub);
         System.out.println(mul);
-        try {int div=value1/value2;
+        try {double div=(double)(value1/value2);
             System.out.println(div);}catch (Exception e){
             System.out.println("Dividing by 0 is not allowed");
         }
