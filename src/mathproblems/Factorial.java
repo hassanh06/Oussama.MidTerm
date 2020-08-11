@@ -1,6 +1,8 @@
 package mathproblems;
 
 
+import java.util.Scanner;
+
 public class Factorial {
 
     public static void main(String[] args) {
@@ -10,5 +12,21 @@ public class Factorial {
          *
          */
 
+        doFactorial();
     }
+        public static void doFactorial(){
+
+
+            Scanner input=new Scanner(System.in);
+            System.out.println("Please Enter a Number :");
+            int number=input.nextInt();
+
+                int f=1;
+                for(int i=1;i<=number;i++){
+                    f=f*i;
+                }
+                System.out.println("Factorial of "+number+" is : "+f);
+    }
+
+
 }
