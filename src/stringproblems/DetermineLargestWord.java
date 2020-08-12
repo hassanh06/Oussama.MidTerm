@@ -1,5 +1,6 @@
 package stringproblems;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +13,19 @@ public class DetermineLargestWord {
         String s="Human brain is a biological learning machine";
         Map<Integer, String> wordNLength = findTheLargestWord(s);
 
+
+        String [] words = s.split(" ", 7);
+        int st=s.length();
+        String rts = "";
+        for(int i=0 ; i<words.length ; i++) {
+            if(words[i].length() >= rts.length())
+            {
+                rts = words[i];
+            }
+
+        }
+
+        System.out.println("The length and longest word in the given sentence : "+rts.length()+" "+rts);
 
         //implement
 

@@ -39,22 +39,3 @@ public class SearchElementOfArray {
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
