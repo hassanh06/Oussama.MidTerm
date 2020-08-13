@@ -14,14 +14,36 @@ public class UnitTestingMath {
 
         Fibonacci.doFabonacci();
     }
-    @Test
+
     public void unitTesting2(){
 
-        FindMissingNumber.missNumber();
     }
     @Test
     public void unitTesting3(){
+
+        FindMissingNumber.missNumber();
+    }
+
+    public void unitTesting4(){
+
+    }
+    @Test
+    public void unitTesting5() {
         MakePyramid.pyramid();
+    }
+    @Test
+    public void unitTesting6(){
+        MergeTwoArraysAndRemoveDuplicatesProgram.mergeArraysWithoutDuplicates();
+    }
+    @Test
+    public void unitTesting7(){
+        Pattern.doPattern();
+
+    }
+    @Test
+    public void unitTesting8(){
+
+        PrimeNumber.findPrimeNumber();
     }
 
 
