@@ -12,7 +12,9 @@ public class Student extends databases.Student implements Serializable {
 	public String score;
 	public String id;
 
-	public Student(){}
+	public Student(){
+
+	}
 
 	public Student(String firstName, String lastName, String score, String id) {
 		this.firstName = firstName;

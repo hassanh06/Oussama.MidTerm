@@ -1,34 +1,138 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
+A. Use of appropriate data structure enables a computer system to perform its task more efficiently,
+by influencing the ability of computer to store and retrieve data from any location in its memory.
 
 
 What are the various operations that can be performed on different Data Structures?
+A.Creation
+Insertion
+Traversal
+Search
+Sorting
+Merging
+Updating
+Deletion
+
 List out the areas in which data structures are applied extensively?
+A.Compiler Design,
+  Operating System,
+  Database Management System,
+  Statistical analysis package,
+  Numerical Analysis,
+  Graphics,
+  Artificial Intelligence,
+  Simulation.
+
 what is an Array?
+A.An array is a container object that holds a fixed number of values of a single type.
+
 what is the difference between the Array and ArrayList?
+A.difference between Array and ArrayList in Java is that Array is a fixed length data structure,
+ArrayList is a variable length Collection class.
+we can not use Generics along with Array,
+ArrayList allows us to use Generics to ensure type-safety.
+
+
 what is LinkedList?
+A.Linked List is a part of the Collection framework present in java. util package.
+This class is an implementation of the LinkedList data structure which is a linear data structure
+where the elements are not stored in contiguous locations and every element is a separate object
+with a data part and address part.
+
 How is an Array different from Linked List?
+A.Array is a collection of elements of similar data type.
+Linked List is an ordered collection of elements of same type, which are connected to each other using pointers.
+Array supports Random Access, which means elements can be accessed directly using their index,
+
 what is queue?
+A.Java Queue is an interface available in java. util package and extends java.Collection interface.
+Java Queue is a collection of ordered elements (Or objects) We can use Queue to store elements before processing those elements.
+
 what is stack?
+A.A Stack is a Last In First Out (LIFO) data structure. It supports two basic operations called push and pop.
+The push operation adds an element at the top of the stack, and the pop operation removes an element from the top of the stack.
+
 what is FIFO and LIFO?
+A.FIFO is an abbreviation for first in, first out.
+It is a method for handling data structures where the first element is processed first and the newest element is processed last.
+LIFO is an abbreviation for Last in, first out
+
+
 what is the order of complexity?
+A.it is a certain mathematical expression of the size of the input, and the algorithm finishes between two factors of it.
+
 what is the best case to search an element from an array?
+A.If the array is sorted, we can use Binary Search. If it is not, we have to use sequential search
+
 what is the worst case to search an element from an array?
+A.The worst case to search an element from an array is when the element we are searching for is the last element in the array.
+In this case, we will iterate N times before we find the element.
+
 what is tree in data structure?
+A.A Tree is a non-linear data structure where data objects are organized in terms of hierarchical relationship.
+
 what is graph in data structure?
+A.A graph in data structure is for storing connected data.
+A graph consists of vertices and edges.
+A vertex represents the entity and an edge represents the relationship between entities
+
 what is the difference between the HashTable and HashMap?
+A.HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code,
+ Hashtable is synchronized.
+ HashMap allows one null key and multiple null values,
+ Hashtable doesn't allow any null key or value
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A.RDBMS = Array
+  Network data model = Graph
+  Hierarchical data model = Trees
+
 How HashMap works in java?
+A.HashMap in Java works on hashing principles.
+It is a data structure which allows us to store object and retrieve it in constant time
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A.ArrayIndexOutOfBoundsException is thrown to indicate that we are trying to access array element with an illegal index.
+ This exception is thrown when the index is either negative or greater than or equal to the size of the array.
+
 What are the different ways of copying an array into another array?
+A.There are multiple ways to copy elements from one array to another.
+example : create a clone of the array, use Arrays. copyOf() method or
+System. arrayCopy() to start copying elements from one array to another
+
 What is difference between an array and a linked list?
+A.An array is a collection of elements of a similar data type.
+Linked List is an ordered collection of elements of the same type in which each element is connected to the next using pointers.
+
 What is DFS and BFS?
+A.BFS (Breadth First Search). DFS (Depth First Search).
+BFS(Breadth First Search) uses Queue data structure for finding the shortest path.
+DFS(Depth First Search) uses Stack data structure.
+
 What is Recursion?
+A.Recursion is the technique of making a function (method) call itself.
+
 What are linear and non linear data Structures?
+A.In a linear data structure, data elements are arranged in a linear order where each and every elements are attached to its previous and next adjacent.
+  In a non-linear data structure, data elements are attached in hierarchically manner.
+
 What is Big-(O)-notation?
+A.big O notation is used to classify algorithms according to how their run time or space requirements grow as the input size grows
+
 Outlined different kind of sorting algorithm with time complexity?
+A.Algorithm	                Time Complexity
+                        Best	Average 	Worst
+
+  Selection Sort	    Ω(n^2)	θ(n^2)	    O(n^2)
+  Bubble Sort	        Ω(n)	θ(n^2)	    O(n^2)
+  Insertion Sort	    Ω(n)	θ(n^2)	    O(n^2)
+  Heap Sort	        Ω(n log(n))	θ(n log(n))	O(n log(n))
+  Quick Sort	    Ω(n log(n))	θ(n log(n))	O(n^2)
+  Merge Sort	    Ω(n log(n))	θ(n log(n))	O(n log(n))
+  Bucket Sort	        Ω(n+k)	θ(n+k)	    O(n^2)
+  Radix Sort	        Ω(nk)	θ(nk)	    O(nk)
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
