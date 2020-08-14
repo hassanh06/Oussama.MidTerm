@@ -63,17 +63,17 @@ public class UseArrayList {
 			statement = connection.createStatement();
 
 
-			// insert into tableName(id,title) values( 5,"titanic");
+
 			for (UseArrayList cm : carModels) {
-				// insert into tableName() values();
+
 				String query = "insert into carModels(ford, hyundai, toyota, audi) " +
 						"   values('" + cm.getFord() + "','" + cm.getHyundai() + "','" + cm.getToyota()
 						+ "','" + cm.getAudi() + "')      ";
-				//String query1="select * from movies";
+
 				statement.execute(query);
 
 			}
-			System.out.println("Connected to MySQLDataBase");
+			System.out.println("Connected to HassanDB DataBase");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
