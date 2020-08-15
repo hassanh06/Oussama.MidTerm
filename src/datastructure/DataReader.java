@@ -1,5 +1,12 @@
 package datastructure;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Stack;
+
 public class DataReader {
 
 	public static void main(String[] args) {
@@ -20,7 +27,36 @@ public class DataReader {
 
 		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
 
+		Stack<String> stack = new Stack();
+		LinkedList<String> linkedList = new LinkedList<>();
 
+		try (BufferedReader br = new BufferedReader(new FileReader(textFile))) {
+
+			String line;
+			while ((line = br.readLine()) != null) {
+				for(String word: line.split(" ")) {
+					stack.push(word);
+					linkedList.add(word);
+				}
+
+			}
+
+		} catch (IOException e) {
+			System.err.format("IOException: %s%n", e);
+		}
+
+		System.out.println("First word pushed: " + stack.firstElement());
+		System.out.println("Last word pushed: " + stack.peek());
+
+		System.out.println("\nThe original file content using For Each:");
+		for(String word: stack)
+			System.out.print(word + " ");
+
+		System.out.println("\n\nThe original file content using iterator:");
+		Iterator<String> iterator = linkedList.iterator();
+		while(iterator.hasNext()){
+			System.out.print(iterator.next() + " ");
+		}
 
 	}
 

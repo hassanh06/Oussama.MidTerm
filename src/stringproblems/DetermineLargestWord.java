@@ -35,6 +35,8 @@ public class DetermineLargestWord {
         Map<Integer, String> map = new HashMap<Integer, String>();
         String st = "";
         //implement
+        for (String word : wordGiven.split(" "))
+            map.put(word.length(), word);
 
         return map;
     }

@@ -12,7 +12,7 @@ import java.util.Iterator;
 
 public class ReadExcelFile {
 
-    private static final String FILE_NAME = System.getProperty("user.dir") + "/DataTest/Sample.xlsx";
+    private static final String FILE_NAME = System.getProperty("user.dir") + "/DataTest/TestExcelFile.xlsx";
 
     public static void main(String[] args) {
 
