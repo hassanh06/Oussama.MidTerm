@@ -1,5 +1,7 @@
 package design;
 
+import java.text.ParseException;
+
 public class FortuneEmployee {
 
 	/**
@@ -13,10 +15,10 @@ public class FortuneEmployee {
 	 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 	 *
 	 **/
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) throws ParseException {
+		EmployeeInfo Elhacen = new EmployeeInfo(001, "Elhacen",150000.00);
 
-
+		Elhacen.calculateEmployeeBonus(120000);
 	}
 
 }

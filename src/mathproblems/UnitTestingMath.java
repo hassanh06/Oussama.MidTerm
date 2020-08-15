@@ -1,5 +1,6 @@
 package mathproblems;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class UnitTestingMath {
@@ -7,7 +8,11 @@ public class UnitTestingMath {
     @Test
     public void unitTesting(){
 
-        Factorial.doFactorial();
+        int expectedResult=120;
+        int actualResult=Factorial.doFactorial1(5);
+        // Assert.assertEquals(expectedResult,actualResult);
+        Assert.assertEquals("Test case fail",actualResult,expectedResult);
+
     }
     @Test
     public void unitTesting1(){

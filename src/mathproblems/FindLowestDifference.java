@@ -11,7 +11,7 @@ public class FindLowestDifference {
          The lowest difference between cells is 1
         */
 
-        int[] array1 = {30, 12, 5, 9, 2, 20, 33};
+        int[] array1 = {30, 12, 5, 9, 2, 20, 33,1};
         int[] array2 = {18, 25, 41, 47, 17, 36, 14, 19};
 
         // Calculate size of Both arrays
@@ -29,7 +29,7 @@ public class FindLowestDifference {
             Arrays.sort(array1);
             Arrays.sort(array2);
 
-            int i = 0, j = 0;                          // not done yet
+            int i = 0, j = 0;
 
             // Initialize result as max value
             int result = Integer.MAX_VALUE;

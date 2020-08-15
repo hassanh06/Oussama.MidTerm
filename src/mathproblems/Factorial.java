@@ -13,6 +13,10 @@ public class Factorial {
          */
 
         doFactorial();
+
+        int x = 10;
+        System.out.println(doFactorial1(5));
+        System.out.println(doFactorial2(5));
     }
         public static void doFactorial(){
 
@@ -26,6 +30,19 @@ public class Factorial {
                     f=f*i;
                 }
                 System.out.println("Factorial of "+number+" is : "+f);
+    }
+
+
+    public static int doFactorial1(int x){
+        if (x == 1)
+            return 1;
+        return x * doFactorial1(x - 1);
+    }
+    public static int doFactorial2 ( int x){
+        int product = 1;
+        for (int i = 1; i <= x; i++)
+            product *= i;
+        return product;
     }
 
 
