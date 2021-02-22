@@ -9,8 +9,9 @@ public class RandomNumberGenerate {
     public static void main(String[] args) {
         random();
 
-    }
 
+
+    }
     public static void random(){
         Random randomGenerator=new Random();
         for (int i = 0; i < 8; i++) {
@@ -18,6 +19,7 @@ public class RandomNumberGenerate {
         }
 
     }
+
 
 
 
